@@ -12,7 +12,7 @@ router.get('/logout', (req, res) => {
     res.send('logging out');
 });
 
-// auth with google+
+// auth with github+
 router.get('/github', passport.authenticate('github', {
      scope:['profile']
 }));
